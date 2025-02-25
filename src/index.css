@@ -1,9 +1,6 @@
 /* extra small devices (phones)*/
 @media only screen and (max-width: 600px) {
-  body {
-    margin: 0;
-    background-color: #EDEEC9;
-  }
+
 }
 
 /* small devices (tablets, 600px and up)*/
@@ -184,4 +181,18 @@ body {
 .shiba-container:hover .speech-bubble {
   display: block;
   animation: showBubble 3s forwards;
+}
+
+.about-me-bubble {
+  font-family: 'Rea-Regular', sans-serif;
+  color: #77bfa3;
+  text-align: left;
+  background-color: #BFD8BD;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 300px 0 500px 420px;
+  max-width: 400px;
+  font-size: 18px;
+  z-index: 20;
+  position: relative;
 }

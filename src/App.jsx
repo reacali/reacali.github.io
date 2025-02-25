@@ -21,6 +21,12 @@ function App() {
           </ul>
         </nav>
         <img src={nameImage} alt="Name" className="name-image" />
+        <div className="about-me-bubble">
+          <p> UNDER CONSTRUCTION!! don't mind the mess <br /><br /><br />
+              I'm a Computer Science graduate (May 2025) from UIC with a passion for cybersecurity, networking, and cloud computing. As the Cybersecurity SIG Lead at UIC’s ACM, I design hands-on workshops and projects, fostering practical security skills. <br /><br />
+              I enjoy building secure systems, exploring network protocols, and solving complex problems. My experience includes software development, penetration testing, and cloud technologies, with projects ranging from networked applications to low-level system programming. <br /><br />
+              Currently, I'm seeking a full-time role in cybersecurity, network engineering, or cloud solutions where I can apply my skills to real-world challenges.</p>
+        </div>
         <img src={profilePhoto} alt="Profile" className="profile-photo" />
         <div className="social-icons">
           <a href="https://github.com/reacali" target="_blank" rel="noopener noreferrer">
