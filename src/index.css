@@ -21,8 +21,8 @@
 body {
   margin: 0;
   background-color: #EDEEC9;
-  cursor: url('./src/assets/images/paw.png'), auto;
-  background-image: url('./src/assets/images/star.png'), url('./src/assets/images/twinkles.png'), url('./src/assets/images/plus.png');
+  cursor: url('./assets/images/paw.png'), auto;
+  background-image: url('./assets/images/star.png'), url('./assets/images/twinkles.png'), url('./assets/images/plus.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 95% 30%, 50px 50px, 400px 105%;
   background-size: 200px, 200px, 100px;
