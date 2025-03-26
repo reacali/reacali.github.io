@@ -21,6 +21,11 @@
 body {
   margin: 0;
   background-color: #EDEEC9;
+  cursor: url('./src/assets/images/paw.png'), auto;
+  background-image: url('./src/assets/images/star.png'), url('./src/assets/images/twinkles.png'), url('./src/assets/images/plus.png');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 95% 30%, 50px 50px, 400px 105%;
+  background-size: 200px, 200px, 100px;
 }
 
 @font-face {
@@ -38,18 +43,15 @@ body {
 }
 
 .name-image {
-  width: 45%;
+  width: 50%;
   height: auto;
   position: absolute;
   bottom: 50%; 
-  right: 35%;
-  z-index: 2;
+  right: 20%;
+  z-index: 25;
 }
 
-.name-image:hover {
-  cursor: default;
-  transform: scale(1.1);
-}
+
 
 .profile-photo {
   width: 400px;
@@ -183,16 +185,35 @@ body {
   animation: showBubble 3s forwards;
 }
 
+
+.app-container {
+  overflow: visible; /* Ensure content is not clipped */
+  height: auto; /* Allow the container to grow with content */
+}
+
 .about-me-bubble {
+  position: relative; /* Required for the pseudo-element */
   font-family: 'Rea-Regular', sans-serif;
   color: #77bfa3;
   text-align: left;
-  background-color: #BFD8BD;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 300px 0 500px 420px;
-  max-width: 400px;
-  font-size: 18px;
+  padding: 50px; /* Space inside the text box */
+  margin: 400px 0 0 600px; /* Position the text box */
+  max-width: 600px; /* Constrain the text box width */
+  font-size: 24px;
   z-index: 20;
-  position: relative;
+  background: none; /* Remove the background image from the main element */
+}
+
+.about-me-bubble::before {
+  content: '';
+  position: absolute;
+  top: -130px; /* Extend the background above the text box */
+  left: -50px; /* Extend the background to the left */
+  width: 800px; /* Set the width of the background */
+  height: 500px; /* Set the height of the background */
+  background-image: url('./src/assets/images/aboutme.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* Ensure the image scales properly */
+  z-index: -1; /* Place the background behind the text */
 }

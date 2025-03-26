@@ -1,4 +1,5 @@
 import React from 'react';
+
 import nameImage from './assets/images/name.svg';
 import profilePhoto from './assets/images/me.jpg';
 import emailIcon from './assets/images/email.png';
@@ -11,6 +12,8 @@ function App() {
 
   return (
       <div className = "app-container">
+
+        {/* Navigation Bar */}
         <nav className="menu-bar">
           <ul>
             <li><a href="#home">home</a></li>
@@ -20,14 +23,22 @@ function App() {
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
+
+        {/* Name Image */}
         <img src={nameImage} alt="Name" className="name-image" />
+
+        {/* About Me */}
         <div className="about-me-bubble">
-          <p> UNDER CONSTRUCTION!! don't mind the mess <br /><br /><br />
-              I'm a Computer Science graduate (May 2025) from UIC with a passion for cybersecurity, networking, and cloud computing. As the Cybersecurity SIG Lead at UIC’s ACM, I design hands-on workshops and projects, fostering practical security skills. <br /><br />
-              I enjoy building secure systems, exploring network protocols, and solving complex problems. My experience includes software development, penetration testing, and cloud technologies, with projects ranging from networked applications to low-level system programming. <br /><br />
-              Currently, I'm seeking a full-time role in cybersecurity, network engineering, or cloud solutions where I can apply my skills to real-world challenges.</p>
+          <p>  Hi, I'm Reagan! I’m a soon-to-be Computer Science graduate from UIC with a passion for cybersecurity, networking, and systems administration. <br/><br/>
+              This site is my portfolio--a place to showcase my skills, projects, and professional journey.<br/><br/>
+              I’m currently seeking a full-time role in cybersecurity, network engineering, systems administration, or related fields. Let’s connect! Feel free to reach out via LinkedIn or email (both linked to the left).
+          </p>
         </div>
+
+        {/* Profile Photo */}
         <img src={profilePhoto} alt="Profile" className="profile-photo" />
+
+        {/* Social Icons */}
         <div className="social-icons">
           <a href="https://github.com/reacali" target="_blank" rel="noopener noreferrer">
             <img src={githubIcon} alt="GitHub" className="social-icon github-icon" />
@@ -39,6 +50,8 @@ function App() {
             <img src={emailIcon} alt="Email" className="social-icon email-icon" />
           </a>
       </div>
+
+      {/* Shiba Image */}
       <div className="shiba-container">
         <img src={shibaImage} alt="Shiba" className="shiba-image" />
         <div className="speech-bubble">woof!</div>
