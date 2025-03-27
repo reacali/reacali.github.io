@@ -21,10 +21,19 @@
 body {
   margin: 0;
   background-color: #EDEEC9;
+  font-family: 'MyFont', sans-serif;
+}
+
+.home-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   cursor: url('./assets/images/paw.png'), auto;
   background-image: url('./assets/images/star.png'), url('./assets/images/twinkles.png'), url('./assets/images/plus.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 95% 30%, 50px 50px, 400px 105%;
+  background-position: 95% 30%, 50px 50px, 400px 90%;
   background-size: 200px, 200px, 100px;
 }
 
@@ -38,9 +47,6 @@ body {
   src: url('./assets/fonts/Rea-Regular.otf') format('truetype');
 }
 
-body {
-  font-family: 'MyFont', sans-serif;
-}
 
 .name-image {
   width: 50%;
@@ -184,7 +190,6 @@ body {
   display: block;
   animation: showBubble 3s forwards;
 }
-
 
 .app-container {
   overflow: visible; 
