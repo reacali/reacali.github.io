@@ -187,33 +187,33 @@ body {
 
 
 .app-container {
-  overflow: visible; /* Ensure content is not clipped */
-  height: auto; /* Allow the container to grow with content */
+  overflow: visible; 
+  height: auto; 
 }
 
 .about-me-bubble {
-  position: relative; /* Required for the pseudo-element */
+  position: relative;
   font-family: 'Rea-Regular', sans-serif;
   color: #77bfa3;
   text-align: left;
-  padding: 50px; /* Space inside the text box */
-  margin: 400px 0 0 600px; /* Position the text box */
-  max-width: 600px; /* Constrain the text box width */
+  padding: 50px;
+  margin: 400px 0 0 600px;
+  max-width: 600px;
   font-size: 24px;
   z-index: 20;
-  background: none; /* Remove the background image from the main element */
+  background: none;
 }
 
 .about-me-bubble::before {
   content: '';
   position: absolute;
-  top: -130px; /* Extend the background above the text box */
-  left: -50px; /* Extend the background to the left */
-  width: 800px; /* Set the width of the background */
-  height: 500px; /* Set the height of the background */
-  background-image: url('./src/assets/images/aboutme.svg');
+  top: -130px;
+  left: -50px;
+  width: 800px;
+  height: 500px;
+  background-image: url('./assets/images/aboutme.svg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain; /* Ensure the image scales properly */
-  z-index: -1; /* Place the background behind the text */
+  background-size: contain;
+  z-index: -1;
 }
