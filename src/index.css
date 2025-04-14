@@ -24,6 +24,7 @@ body {
   background-color: #EDEEC9;
   font-family: 'MyFont', sans-serif;
   overflow: hidden;
+  cursor: url('./assets/images/paw.png'), auto;
 }
 
 @font-face {
@@ -43,7 +44,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: url('./assets/images/paw.png'), auto;
   background-image: url('./assets/images/star.png'), url('./assets/images/twinkles.png'), url('./assets/images/plus.png');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 95% 30%, 50px 50px, 400px 90%;
