@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 
 import nameImage from '../assets/images/name.svg';
 import profilePhoto from '../assets/images/me.jpg';
@@ -18,9 +18,9 @@ function Home() {
 
         {/* About Me */}
         <div className="about-me-bubble">
-          <p>  Hi, I'm Reagan! I’m a soon-to-be Computer Science graduate from UIC with a passion for cybersecurity, networking, and systems administration. <br/><br/>
-              This site is my portfolio--a place to showcase my skills, projects, and professional journey.<br/><br/>
-              I’m currently seeking a full-time role in cybersecurity, network engineering, systems administration, or related fields. Let’s connect! Feel free to reach out via LinkedIn or email (both linked to the left).
+          <p> Hi, I'm Reagan! I’m a soon-to-be Computer Science graduate from UIC with a strong foundation in cybersecurity and networking, but I'm also passionate about software engineering and UI design.<br/><br/>
+              This site is my portfolio where I can showcase my skills, projects, and professional journey. While I’ve had a focus on cybersecurity and networking, I’m now exploring opportunities in software engineering and UI/UX design.<br/><br/>
+              I’m currently seeking a full-time role in cybersecurity, network engineering, software engineering, UI/UX design, or related fields. Let’s connect! Feel free to reach out via LinkedIn or email (both linked to the left).
           </p>
         </div>
 
