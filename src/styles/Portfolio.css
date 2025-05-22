@@ -1,0 +1,42 @@
+.postcards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .postcard {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+  }
+  
+  .portfolio-postcard-image {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .postcard-text {
+    position: absolute;
+    bottom: 50%;
+    right: 15%;
+    font-size: 35px;
+    transform: translate(-10%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #77bfa3;
+    font-family: 'Rea-Regular', sans-serif;
+    max-width: 45%;
+    font-weight: bold;
+  }
+  
+  body {
+    overflow-y: auto;
+  }
