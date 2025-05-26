@@ -9,7 +9,7 @@ function About() {
             <section className="about-me">
             <h2>About Me</h2>
             <p> &nbsp;&nbsp;&nbsp;&nbsp;
-                I’m a soon-to-be computer science graduate who loves both technical challenges 
+                I’m a computer science graduate who loves both technical challenges 
                 and creative design. In my senior year at UIC, I led SIG Cybersecurity for UIC's 
                 chapter of ACM, where I created workshops to enhance members' cybersecurity 
                 skills. This experience deepened my passion for tech and has led me to pursue a 

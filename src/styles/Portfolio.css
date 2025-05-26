@@ -16,27 +16,60 @@
   }
   
   .portfolio-postcard-image {
-    width: 90%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .postcard-text {
+
+  .postcard-text-container {
     position: absolute;
-    bottom: 50%;
-    right: 15%;
-    font-size: 35px;
-    transform: translate(-10%, 50%);
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 65%;
     display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Space between text and icons */
+    align-items: center; /* Center content horizontally */
+    font-family: 'Rea-Regular', sans-serif;
+    color: #77bfa3;
+    padding: 0 35px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+  }
+
+  .postcard-text-container h3 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    pointer-events: auto;
+  }
+
+  .link-icons {
+    display: flex;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    color: #77bfa3;
-    font-family: 'Rea-Regular', sans-serif;
-    max-width: 45%;
-    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 80px;
   }
-  
+
+
+  .link-icons img {
+    display: inline-block;
+    opacity: 1;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .link-icons img:hover {
+    outline: 5px solid #bfd8bd;
+  }
+
   body {
     overflow-y: auto;
   }
