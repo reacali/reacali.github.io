@@ -11,50 +11,57 @@
     </head>
 
     <body>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">skills</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
+        <div class="menu">
+            <button class="dropbtn">menu</button>
+            <div class="dropdown-content">
+                <a href="#" class="active">home</a>
+                <a href="#">about</a>
+                <a href="#">skills</a>
+                <a href="#">portfolio</a>
+                <a href="#">contact</a>
+            </div>
+        </div>
 
         <div class="portfolio-container">
             <aside class="left-column">
                 <div class="profile-header">
                     <img src="./images/me.jpg" class="profile-pic">
-                    <img src="./images/name.svg" class="name">
+                    <h1>Reagan Caliendo</h1>
+                    <h2>MSc CS Student - Security</h2>
                     <div class="social-links">
                         <a href="https://linkedin.com/in/reacali"><img src="./images/linkedin.png" alt="LinkedIn Profile"></a>
                         <a href="mailto:caliendoreagan@gmail.com"><img src="./images/email.png" alt="Email"></a>
-                        <a href="https://github.com/reacali"><img src="./images/github.png" alt="GitHub"></a>
+                        <a href="https://github.com/reacali"><img src="./images/github-logo.svg" alt="GitHub"></a>
                     </div>
                 </div>
                 <p class="bio">
-                    Hi! I'm Reagan, an (incoming) Master's student at the University of Calgary, with a focus in security research.
+                    I’m a security-focused Master’s CS student who’s still chasing the same curiosity I had growing up, but this time through security research.
                     <br><br>
-                    From co-founding ACM's SIG Cybersecurity in my undergrad to starting a thesis based program with a cybersecurity focus for my MSc, I have developed a great passion for security.
-                    <br><br>
-                    However, I'm a creative at heart, so, welcome to my space to showcase my security skills and design passions :)
+                    However, I do just about a little bit of everything, from cloud-based data science to machine learning to UI/UX design and almost everything in between. Here’s a display of that :)
                 </p>
             </aside>
 
             <main class="right column">
                 <section class="experiences">
-                    <h2>Experience</h2>
+                    <h3>University of Calgary Jan 2026 - Dec 2027</h3>
+                    <p>MSc in Computer Science</p>
+                    <h3>University of Illinois Chicago</h3>
+                    <p>BSc in Computer Science</p>
+                    <h3>ACM SIG Cybersecurity Co-Founder + Lead</h3>
                     <ul>
-                        <li><strong>University of Calgary</strong> Jan 2026 - Dec 2027</li>
-                        <li><strong>University of Illinois Chicago</strong> Jan 2023 - May 2025</li>
+                        <li>Lead and organize meetings, projects, and workshops relating to cybersecurity with strong engagement, averaging 30+ attendees per meeting.</li>
+                        <li>Design and lead hands-on cybersecurity workshops to develop participants' CTF skills in areas like penetration testing, incident response, and digital forensics, fostering practical, problem-solving abilities.</li>
                     </ul>
                     <a href="#" class="see-more">See more →</a>
                 </section>
                 <section class="project">
                     <section class="project-card">
-                        <h3>Project 1</h3>
-                        <p>Description</p>
-                        <a class="small-github" href="#"><img src="/images/github.png" alt="GitHub"></a>
+                        <h3>TCP Echo Server Verification | C, Verifast</h3>
+                        <ul>
+                            <li>Conducted a research-oriented project to verify memory safety of a C-based TCP echo server using formal methods</li>
+                            <li>Designed and annotated specifications in VeriFast to formally prove the absence of memory leaks and buffer overflows</li>
+                        </ul>
+                        <a class="small-github" href="#"><img src="./images/github.png" alt="GitHub"></a>
                     </section>
                     <a href="#" class="see-more">See more →</a>
                 </section>
