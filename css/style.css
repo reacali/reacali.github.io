@@ -1,71 +1,127 @@
 @font-face {
     font-family: 'Rea-Regular';
-    src: url('../fonts/Rea-Regular.otf') format('truetype');
+    src: url('../fonts/Rea-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Cakecafe';
+    src: url('../fonts/Cakecafe.otf') format('opentype');
 }
 
 body {
-    background-color: #F7E1D7;
-    color: #37302F;
+    background-color: #E7DEDA;
+    color: #698C6B;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    min-height: 100vh;
     font-family: 'Rea-Regular', sans-serif;
 }
 
 .portfolio-container {
     display: flex;
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 2000px;
     width: 100%;
     padding: 2rem;
     border-radius: 10px;
+    align-items: center;
 }
 
+/* --- MENU --- */
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    color: #705448;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+/* --- MENU --- */
+
+.menu-title {
+    font-family: 'Cakecafe';
+    flex-shrink: 0; 
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #705448;
+    transition: all 0.2s ease;
+}
+
+.menu-links a:hover {
+    color: #A17C6B;
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #705448;
+    border-radius: 5px;
+}
+
+/* --- LEFT SIDE --- */
 .left-column {
     flex: 1;
-    width: 50%;
     text-align: left;
 }
 
 .profile-header {
     margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-header-left {
+    flex-shrink: 0;
 }
 
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 250px;
+    height: auto;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #C7D1C3;
-}
-
-
-.profile-header {
-    margin-bottom: 1.5rem;
-    position: relative;
-}
-
-.profile-pic {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
+    border: 8px solid #A17C6B;
     margin-bottom: 1rem;
 }
 
-.name {
-    height: 150px;
+.profile-header-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.profile-header h1 {
     width: auto;
+    color: #4F6950;
+    font-family: 'Cakecafe';
+    font-size: 2.75rem;
 }
 
 .left-column h1 {
-    font-size: 2rem;
     font-weight: 700;
     line-height: 1.1;
-    color: #2D3E3A;
     margin: 0;
 }
 
@@ -78,8 +134,8 @@ body {
 }
 
 .social-links img {
-    width: 32px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
     transition: transform 0.2s ease;
 }
 
@@ -88,13 +144,139 @@ body {
 }
 
 .bio {
-    font-size: 0.95rem;
+    font-size: 1.25rem;
     font-family: 'Rea-Regular', sans-serif;
     line-height: 1.6;
-    color: #4A4A4A;
 }
 
-.small-github img {
-    height: 25px;
+/* --- RIGHT SIDE --- */
+main.right.column {
+    flex: 1;
+}
 
+.schools {
+    display: flex;
+    gap: 30px;
+}
+
+.experiences {
+    line-height: 1;
+    gap: 0.25rem;
+}
+
+.experiences h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.2;
+    color: #4F6950;
+}
+
+.experiences p {
+    margin: 0 0 1rem 0;
+    line-height: 1.4;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.experiences li {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.project-card {
+    border: 5px solid #B0C4B1;
+    border-radius: 15px;
+    padding: 1.0rem;
+    background-color: rgb(176, 196, 177, 0.2);
+
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.2;
+    color: #4F6950;
+}
+
+.project-card li {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.see-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: #A17C6B;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.see-more:hover {
+    transform: scale(1.1);
+}
+
+
+.small-github img {
+    height: 30px;
+}
+
+/* --- MOBILE STYLING --- */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    main.right.column {
+        flex: 1;
+        width: 100%;
+    }
+
+    /* --- MENU CHANGES --- */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        border-top: 1px solid #705448;
+        margin-top: 10px;
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+    
+    .portfolio-container {
+        flex-direction: column;
+        padding-top: 80px; 
+    }
+
+    .left-column,
+    main.right.column {
+        flex: 1;
+        width: 100%;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .schools {
+        flex-direction: column;
+        gap: 0px;
+    }
 }

@@ -12,30 +12,43 @@
 
     <body>
         <div class="menu">
-            <button class="dropbtn">menu</button>
-            <div class="dropdown-content">
-                <a href="#" class="active">home</a>
-                <a href="#">about</a>
-                <a href="#">skills</a>
-                <a href="#">portfolio</a>
-                <a href="#">contact</a>
+            <div class="menu-title">ReaCali</div>
+            
+            <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="menu-links" id="myLinks">
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">EXPERIENCE</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">CONTACT</a>
             </div>
         </div>
 
         <div class="portfolio-container">
             <aside class="left-column">
+
                 <div class="profile-header">
-                    <img src="./images/me.jpg" class="profile-pic">
-                    <h1>Reagan Caliendo</h1>
-                    <h2>MSc CS Student - Security</h2>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/reacali"><img src="./images/linkedin.png" alt="LinkedIn Profile"></a>
-                        <a href="mailto:caliendoreagan@gmail.com"><img src="./images/email.png" alt="Email"></a>
-                        <a href="https://github.com/reacali"><img src="./images/github-logo.svg" alt="GitHub"></a>
+                    <div class="profile-header-left">
+                        <img src="./images/me.jpg" class="profile-pic">
+                    </div>
+                    <div class = "profile-header-right">
+                        <h1>Reagan Caliendo</h1>
+                        <h2>MSc CS Student - Cybersecurity</h2>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/reacali" target="_blank"><img src="./images/linkedin.svg" alt="LinkedIn Profile"></a>
+                            <a href="mailto:caliendoreagan@gmail.com" target="_blank"><img src="./images/email.svg" alt="Email"></a>
+                            <a href="https://github.com/reacali" target="_blank"><img src="./images/github-logo.svg" alt="GitHub"></a>
+                        </div>
                     </div>
                 </div>
+
                 <p class="bio">
-                    I’m a security-focused Master’s CS student who’s still chasing the same curiosity I had growing up, but this time through security research.
+                    I’m a security-focused MSc CS student who’s still chasing the same curiosity I had growing up, but now through security research.
                     <br><br>
                     However, I do just about a little bit of everything, from cloud-based data science to machine learning to UI/UX design and almost everything in between. Here’s a display of that :)
                 </p>
@@ -43,10 +56,18 @@
 
             <main class="right column">
                 <section class="experiences">
-                    <h3>University of Calgary Jan 2026 - Dec 2027</h3>
-                    <p>MSc in Computer Science</p>
-                    <h3>University of Illinois Chicago</h3>
-                    <p>BSc in Computer Science</p>
+                    
+                    <section class="schools">
+                        <div class="ucalgary">
+                            <h3>University of Calgary </h3>
+                            <p>MSc in Computer Science (Jan '26 - Dec '27)</p>
+                        </div>
+                        <div class="uic">
+                            <h3>University of Illinois Chicago</h3>
+                            <p>BSc in Computer Science (May '25)</p>
+                        </div>
+                    </section>
+                    
                     <h3>ACM SIG Cybersecurity Co-Founder + Lead</h3>
                     <ul>
                         <li>Lead and organize meetings, projects, and workshops relating to cybersecurity with strong engagement, averaging 30+ attendees per meeting.</li>
@@ -61,11 +82,24 @@
                             <li>Conducted a research-oriented project to verify memory safety of a C-based TCP echo server using formal methods</li>
                             <li>Designed and annotated specifications in VeriFast to formally prove the absence of memory leaks and buffer overflows</li>
                         </ul>
-                        <a class="small-github" href="#"><img src="./images/github.png" alt="GitHub"></a>
+                        <a class="small-github" href="#"><img src="./images/github-logo.svg" alt="GitHub"></a>
                     </section>
                     <a href="#" class="see-more">See more →</a>
                 </section>
             </main>
         </div>
+        <script>
+            function toggleMenu() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "flex") {
+                    x.style.display = "";
+                    x.classList.remove("active");
+                } else {
+                    x.style.display = "flex";
+                    x.classList.add("active");
+                }
+            }
+        </script>
+
     </body>
 </html>
