@@ -89,6 +89,7 @@ body {
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -222,6 +223,10 @@ main.right.column {
     height: 30px;
 }
 
+.small-github img:hover {
+    transform: scale(1.1);
+}
+
 /* --- MOBILE STYLING --- */
 @media (max-width: 768px) {
     .portfolio-container {
@@ -273,6 +278,12 @@ main.right.column {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .schools {
