@@ -174,5 +174,7 @@ body {
 
     .projects-grid {
         grid-template-columns: 1fr; 
+        gap: 25px;
+        padding: 75px 25px 0px 25px;
     }
 }
