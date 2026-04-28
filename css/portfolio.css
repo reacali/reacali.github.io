@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Rea-Regular';
+    src: url('../fonts/Rea-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Cakecafe';
+    src: url('../fonts/Cakecafe.otf') format('opentype');
+}
+
+body {
+    background-color: #E7DEDA;
+    color: #698C6B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Rea-Regular', sans-serif;
+}
+
+/* --- MENU --- */
+.menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    color: #705448;
+    text-decoration: none;
+    gap: 20px;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.menu-title {
+    font-family: 'Cakecafe';
+    flex-shrink: 0; 
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #705448;
+    transition: all 0.2s ease;
+}
+
+.menu-links a:hover {
+    color: #A17C6B;
+    transform: scale(1.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #705448;
+    border-radius: 5px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card {
+    border: 5px solid #B0C4B1;
+    border-radius: 15px;
+    padding: 1.0rem;
+    background-color: rgb(176, 196, 177, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.2;
+    color: #4F6950;
+}
+
+.project-card li {
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.small-icon img {
+    height: 30px;
+}
+
+.small-icon img:hover {
+    transform: scale(1.1);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 75px;
+    align-items: stretch;
+    padding: 75px 75px 0px 65px;
+}
+
+/* --- MOBILE STYLING --- */
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    main.right.column {
+        flex: 1;
+        width: 100%;
+    }
+
+    /* --- MENU CHANGES --- */
+    .menu {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        border-top: 1px solid #705448;
+        margin-top: 10px;
+    }
+
+    .menu-links.active {
+        display: flex;
+    }
+    
+    .portfolio-container {
+        flex-direction: column;
+        padding-top: 80px; 
+    }
+
+    .left-column,
+    main.right.column {
+        flex: 1;
+        width: 100%;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .schools {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; 
+    }
+}

@@ -42,8 +42,6 @@ body {
     padding-bottom: 20px;
 }
 
-/* --- MENU --- */
-
 .menu-title {
     font-family: 'Cakecafe';
     flex-shrink: 0; 
@@ -218,14 +216,14 @@ main.right.column {
     transform: scale(1.1);
 }
 
-
-.small-github img {
+.small-icon img {
     height: 30px;
 }
 
-.small-github img:hover {
+.small-icon img:hover {
     transform: scale(1.1);
 }
+
 
 /* --- MOBILE STYLING --- */
 @media (max-width: 768px) {
@@ -289,5 +287,9 @@ main.right.column {
     .schools {
         flex-direction: column;
         gap: 0px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; 
     }
 }
